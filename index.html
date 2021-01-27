@@ -5,8 +5,8 @@
 <head>
   <!--
     author: kaylee Gelz
-    date: jan 19
-    assn:1
+    date: jan 26
+    assn:2
   -->
  <meta charset="utf-8">
 <title>Assignment</title>
@@ -18,7 +18,7 @@
 <body>
   <header>
     <h1>Page Header</h1>
-    <img src="images/img0.jpg" alt="Header Image" />
+    <img src="images/img0.jpg" alt="Header Image" onclick="this.src='images\imgx.jpg' " />
   </header>
   <nav>
     <ul>
@@ -27,18 +27,31 @@
   </nav>
   <main>
     <h3>Main content of the home page</h3>
-    <script>
-      var guestName = prompt("What is your name?");
-      document.write("<p>Welcome to the resort, " + guestName + "!</p>");
-     
-    </script>
+    
     
 
     <script src="rooms.js"></script> 
-    <script src="resort.js"></script>
+    <script>
+      var guestName = prompt("Your name please");
+      document.write("<p>Welcome to the resort, " + guestName + "!</p>");
+      
+    </script>
   </main>
+    
+ <footer>
  
- <footer>Footer of the page.</footer>
+  <p>Today's date is:</p>
 
+  <script>
+  printFooter(); {
+    document.write("today's date is " + dateString + "<p>")
+  
+}
+  </script>
+
+  </footer>
+
+    <script src="home.js"></script> 
+    <script src="resort.js"></script>
 </body>
 </html>

@@ -3,12 +3,4 @@
 /// assn:2
 "use strict";
 // function definitions
-    
-
-    
-    
-
-
-
-///function calls
-
+ 
